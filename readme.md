@@ -1,9 +1,9 @@
 # basically Promise.all but python.
 
 ```python
-import in_parallel
+import asyncrun
 
 # Your function and arguments here
-result = in_parallel.all(sample_function, args=[(1,), (2,)])
+result = asyncrun.all(sample_function, args=[(1,), (2,)])
 print(result)
 ```

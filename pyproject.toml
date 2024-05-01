@@ -3,20 +3,20 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-name = "in_parallel"
+name = "asyncrun"
 version = "0.1.0"
 author = "Jack English"
-author_email = "your.email@example.com"
+author_email = "jackjenglish@gmail.com"
 description = "A simple utility for running functions in parallel."
 long_description = "file: README.md"
 long_description_content_type = "text/markdown"
-url = "https://github.com/jackjenglish/in_parallel"
+url = "https://github.com/jackjenglish/asyncrun"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
-packages = ["in_parallel"]
+packages = ["asyncrun"]
 install_requires = [
     "tqdm"
 ]

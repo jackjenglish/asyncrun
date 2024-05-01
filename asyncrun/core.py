@@ -22,6 +22,6 @@ def all(function, args, workers=8):
                     results.append(result)
                     progress.update(1)
                 except Exception as e:
-                    print(f"[in_parallel error]: {e}")
+                    print(f"[asyncrun error]: {e}")
                     progress.update(1)
     return results
