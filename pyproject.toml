@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+name = "in_parallel_package"
+version = "0.1.0"
+author = "Your Name"
+author_email = "your.email@example.com"
+description = "A simple utility for running functions in parallel."
+long_description = "file: README.md"
+long_description_content_type = "text/markdown"
+url = "https://github.com/yourgithub/in_parallel_package"  # Optional
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+packages = ["in_parallel"]
+install_requires = [
+    "tqdm",
+    "concurrent-futures; python_version<'3.2'"
+]
+python_requires = ">=3.6"
