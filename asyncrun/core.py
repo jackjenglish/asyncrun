@@ -10,7 +10,7 @@ def all(function, args, workers=8):
             sig = inspect.signature(function)
             if len(sig.parameters) == 0:
                 future = executor.submit(function)
-            elif isinstance(call_args, (tuple, list)):
+            elif isinstance(call_args, (tuple)):
                 future = executor.submit(function, *call_args)
             else:
                 future = executor.submit(function, call_args)
